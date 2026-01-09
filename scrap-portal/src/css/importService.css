@@ -1,0 +1,79 @@
+.import-container {
+  padding: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #0f172a;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 제목 */
+.import-container h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0a2a5e; /* 플랫폼 네이비 */
+  margin-bottom: 20px;
+  border-left: 5px solid #1f6feb; /* 블루 포인트 */
+  padding-left: 12px;
+}
+
+/* 공통 섹션 */
+.import-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.3s ease;
+}
+
+/* 통계 카드 */
+.import-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 240px;
+  background: #f9fafb;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f6feb;
+  margin: 0;
+}
+
+/* 빈 상태 */
+.import-empty {
+  font-size: 15px;
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

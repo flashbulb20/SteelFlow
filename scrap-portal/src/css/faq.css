@@ -1,0 +1,74 @@
+/* 전체 화면 레이아웃 */
+.faq-screen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f8fbff;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* FAQ 컨테이너 */
+.faq-container {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #e2e8f0;
+  animation: fadeIn 0.6s ease;
+}
+
+/* 제목 */
+.faq-container h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 28px;
+  color: #0a2a5e;
+  text-align: center;
+}
+
+/* FAQ 리스트 */
+.faq-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-container li {
+  background: #f9fafb;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.faq-container li:hover {
+  background: #f1f5f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* 질문 */
+.faq-container li:nth-child(odd) {
+  font-weight: 700;
+  color: #0a2a5e;
+}
+
+/* 답변 */
+.faq-container li:nth-child(even) {
+  margin-top: -10px; /* Q와 붙여줌 */
+  margin-bottom: 20px;
+  padding-left: 28px;
+  color: #475569;
+  font-size: 15px;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

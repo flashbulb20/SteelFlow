@@ -1,0 +1,1 @@
+fastapi uvicorn sqlalchmy psycopg2 passlib python-jose

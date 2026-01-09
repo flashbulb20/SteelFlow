@@ -1,0 +1,216 @@
+/* -------------------- 전체 레이아웃 -------------------- */
+.transaction-container {
+  padding: 30px 50px;
+  background-color: #f9fbfc;
+  min-height: 100vh;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+.transaction-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a3353;
+  border-left: 5px solid #4b8ef1;
+  padding-left: 10px;
+}
+
+/* -------------------- 거래 등록 -------------------- */
+.transaction-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-fields input {
+  flex: 1 1 180px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.form-fields input:focus {
+  border-color: #4b8ef1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(75, 142, 241, 0.3);
+}
+
+.btn-submit {
+  background-color: #4b8ef1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #3974cc;
+}
+
+/* -------------------- 테이블 -------------------- */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.transaction-table th {
+  background-color: #f1f4f8;
+  color: #333;
+  font-weight: 600;
+}
+
+.transaction-table tr:hover {
+  background-color: #f7faff;
+}
+
+/* -------------------- 버튼 -------------------- */
+.btn-accept {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+.btn-complete {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+/* -------------------- 팝업 모달 -------------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: popIn 0.25s ease-in-out;
+}
+
+.modal-header {
+  background-color: #1a3353;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #eee;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px 25px;
+}
+
+.modal-section {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-section p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* -------------------- 이송 정보 등록 꾸밈 -------------------- */
+.delivery-section {
+  background: #f9fbff;
+  border: 1px solid #dce6f8;
+  border-radius: 8px;
+  padding: 18px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.delivery-section:hover {
+  box-shadow: 0 4px 15px rgba(75, 142, 241, 0.15);
+  transform: translateY(-2px);
+}
+
+.delivery-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.delivery-header h4 {
+  color: #1a3353;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.delivery-subtitle {
+  color: #6a7a99;
+  font-size: 0.85rem;
+  margin-top: 3px;
+}
+
+/* 애니메이션 */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

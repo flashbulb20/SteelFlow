@@ -1,0 +1,150 @@
+/* 전체 화면 채우기 */
+html, body, #root, .portal-screen {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f8fbff;
+  color: #0f172a;
+}
+
+/* 헤더 */
+.portal-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+.portal-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0a2a5e;
+}
+.portal-logo span { color: #1f6feb; }
+
+.portal-nav {
+  display: flex;
+  gap: 24px;
+}
+.portal-nav a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+}
+.portal-nav a:hover { color: #0a2a5e; }
+
+/* 히어로 */
+.portal-hero {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 */
+  align-items: center;     /* 가로 중앙 */
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.portal-hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #0a2a5e;
+}
+.portal-hero p {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* CTA 버튼 */
+.portal-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portal-btn {
+  min-width: 160px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+  text-align: center;
+}
+.portal-btn.primary {
+  background: linear-gradient(135deg, #0a2a5e, #1f6feb);
+  color: #fff;
+}
+.portal-btn.ghost {
+  border: 2px solid #1f6feb;
+  color: #1f6feb;
+  background: transparent;
+}
+
+/* 특징 카드 */
+.portal-features {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+.feature-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+.feature-icon { font-size: 32px; margin-bottom: 12px; }
+
+/* 통계 카드 */
+.portal-stats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+.stat-card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0a2a5e;
+}
+
+/* 푸터 */
+.portal-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #64748b;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+.footer-sub { margin-top: 4px; font-size: 13px; color: #94a3b8; }

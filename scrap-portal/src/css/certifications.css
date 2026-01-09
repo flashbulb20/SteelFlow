@@ -1,0 +1,146 @@
+.certifications-container {
+  padding: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #0f172a;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 메인 제목 */
+.certifications-container h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0a2a5e;
+  margin-bottom: 20px;
+  border-left: 5px solid #16a34a; /* 초록 계열 강조 */
+  padding-left: 12px;
+}
+
+/* 탭 네비게이션 */
+.certification-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+.certification-tabs button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  background: transparent;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.certification-tabs button:hover {
+  color: #16a34a;
+}
+
+.certification-tabs button.active {
+  color: #16a34a;
+  font-weight: 700;
+  border-bottom: 3px solid #16a34a;
+}
+
+/* 컨텐츠 박스 */
+.certification-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.3s ease;
+}
+
+/* 테이블 */
+.certification-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.certification-section th,
+.certification-section td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.certification-section th {
+  background: #f0fdf4;
+  font-weight: 700;
+  color: #166534;
+}
+
+.certification-section tr:hover td {
+  background: #f9fafb;
+}
+
+/* 폼 */
+.certification-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.certification-section label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.certification-section input,
+.certification-section select,
+.certification-section textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.certification-section input:focus,
+.certification-section select:focus,
+.certification-section textarea:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2);
+  outline: none;
+}
+
+.certification-section textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* 버튼 */
+.certification-section button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.certification-section button:hover {
+  background: #166534;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,86 @@
+.ai-container {
+  padding: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #0f172a;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 제목 */
+.ai-container h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0a2a5e; /* 플랫폼 공통 네이비 */
+  margin-bottom: 12px;
+  border-left: 5px solid #1f6feb; /* 블루 포인트 */
+  padding-left: 12px;
+}
+
+.ai-warning {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e3a8a;
+  margin-bottom: 24px;
+}
+
+/* 공통 섹션 */
+.ai-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.ai-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f6feb; /* 블루 포인트 */
+  margin-bottom: 16px;
+}
+
+/* 리스트 */
+.ai-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-section li {
+  font-size: 15px;
+  color: #334155;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ai-section li:last-child {
+  border-bottom: none;
+}
+
+/* 버튼 */
+.ai-section button {
+  padding: 10px 18px;
+  background: #1f6feb; /* 블루 통일 */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.ai-section button:hover {
+  opacity: 0.8;
+  background: #0a2a5e; /* 네이비 강조 */
+}
+
+/* 관리 버튼 묶음 */
+.ai-actions {
+  display: flex;
+  gap: 12px;
+}

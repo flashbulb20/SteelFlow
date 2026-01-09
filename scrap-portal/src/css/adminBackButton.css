@@ -1,0 +1,23 @@
+.admin-back-btn {
+  margin-bottom: 15px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #0a2a5e, #1f6feb); /* 플랫폼 톤 */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-back-btn:hover {
+  background: linear-gradient(135deg, #0a2a5e 20%, #2a7ef5 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(31, 111, 235, 0.3);
+}
+
+.admin-back-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
