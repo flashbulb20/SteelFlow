@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function Profile() {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ export default function Profile() {
   const handleUpdate = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/users/me", {
+      const res = await fetch(`${API_BASE_URL}/users/me`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -59,7 +60,7 @@ export default function Profile() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/users/me", {
+      const res = await fetch(`${API_BASE_URL}/users/me`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

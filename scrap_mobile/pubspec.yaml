@@ -1,0 +1,72 @@
+name: scrap_mobile
+description: "철스크랩 물류 관리 및 시각화 Flutter 앱"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🌐 네트워크 통신
+  http: ^1.2.0
+
+  # 🧠 상태 관리
+  provider: ^6.0.5
+
+  # ⚙️ 환경 변수 관리 (.env)
+  flutter_dotenv: ^5.1.0
+
+  # 🗺️ 지도 관련 (향후 사용 가능)
+  google_maps_flutter: ^2.7.0
+
+  # 📊 데이터 시각화용 차트 라이브러리
+  fl_chart: ^0.68.0
+
+  # 📅 날짜 포맷팅 (DateFormat)
+  intl: ^0.19.0
+
+  # 💾 로컬 저장소 (자동로그인 등)
+  shared_preferences: ^2.3.2
+
+  # 🍎 iOS용 기본 아이콘
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # 🔍 린트 규칙 (코드 품질 검사)
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/splash/splash_text.png
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true
+
+  android_12:
+    color: "#FFFFFF"
+    image: assets/splash/splash_text.png
+    icon_background_color: "#FFFFFF"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"    # ✅ 정사각형 1024x1024 권장
+  remove_alpha_ios: true
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # 📁 환경변수 파일 등록
+  assets:
+    - .env
+    - assets/splash/splash_text.png
